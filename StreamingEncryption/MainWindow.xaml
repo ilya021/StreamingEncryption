@@ -1,0 +1,20 @@
+﻿<Window x:Class="StreamingEncryption.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StreamingEncryption"
+        mc:Ignorable="d"
+        Title="StreamingEncryption" Height="450" Width="800">
+    <Grid>
+        <Button Content="Зашифровать" Margin="416,138,0,0" Click="ButtonClickEncrypt" FontSize="20" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="141"/>
+        <Button Content="Расшифровать" Margin="616,138,0,0" Click="ButtonClickDecrypt" FontSize="20" HorizontalAlignment="Left" Width="141" Height="40" VerticalAlignment="Top"/>
+        <TextBox x:Name="keyWord" Margin="126,138,0,0" TextWrapping="Wrap" FontSize="20" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="206"/>
+        <TextBox x:Name="inputText" Margin="260,49,0,0" TextWrapping="Wrap" FontSize="20" Height="42" VerticalAlignment="Top" HorizontalAlignment="Left" Width="495"/>
+        <TextBox x:Name="encryptedText" Margin="260,219,0,0" TextWrapping="Wrap" FontSize="20" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left" Width="495"/>
+        <TextBlock Margin="24,55,0,0" Text="Исходный текст" TextWrapping="Wrap" FontSize="20" HorizontalAlignment="Left" Width="189" Height="30" VerticalAlignment="Top"/>
+        <TextBlock Margin="24,226,0,0" Text="Обработанный текст" TextWrapping="Wrap" FontSize="20" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="204"/>
+        <TextBlock Margin="24,140,0,0" Text="Ключ" TextWrapping="Wrap" FontSize="24" Height="38" VerticalAlignment="Top" HorizontalAlignment="Left" Width="104"/>
+
+    </Grid>
+</Window>
